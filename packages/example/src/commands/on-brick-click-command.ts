@@ -5,7 +5,7 @@ import { setBrickLivesCommand } from './set-brick-lives-command';
 export const onBrickClickCommand = (store: Mono.IStore, index: number): void => {
     const brickModel = store.game.bricks[index];
 
-    mono.command
+    void window.mono.command
         //
         .payload(brickModel, brickModel.lives - 1)
         .guard(isActiveBrickGuard)

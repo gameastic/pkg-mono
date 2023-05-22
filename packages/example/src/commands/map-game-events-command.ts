@@ -6,10 +6,10 @@ import { onUserInitializedCommand } from './on-user-initialized-command';
 
 export const mapGameEventsCommand = (_store: Mono.IStore): void => {
     /* model events */
-    mono.command.map('User:Initialized', onUserInitializedCommand);
-    mono.command.map('Game:Initialized', onGameInitializedCommand);
-    mono.command.map('Store:Initialized', onStoreInitializedCommand);
+    window.mono.command.map('User:Initialized', onUserInitializedCommand);
+    window.mono.command.map('Game:Initialized', onGameInitializedCommand);
+    window.mono.command.map('Store:Initialized', onStoreInitializedCommand);
 
     /* view events */
-    mono.command.map('Brick:Click', onBrickClickCommand);
+    window.mono.command.map('Brick:Click', onBrickClickCommand);
 };

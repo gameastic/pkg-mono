@@ -22,6 +22,6 @@ export class BrickView {
     }
 
     private _onBrickClick(index: number): void {
-        mono.view.emit('Brick:Click', index);
+        window.mono.view.emit('Brick:Click', index);
     }
 }

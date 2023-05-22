@@ -9,7 +9,7 @@ export class GameModel {
 
     protected set bricks(value: BrickModel[]) {
         this._bricks = value;
-        mono.model.emit('Game:BricksUpdate', this._bricks);
+        window.mono.model.emit('Game:BricksUpdate', this._bricks);
     }
 
     public initialize(): void {
@@ -25,7 +25,7 @@ export class GameModel {
             new BrickModel(),
         ]);
 
-        mono.model.emit('Game:Initialized', this);
+        window.mono.model.emit('Game:Initialized', this);
     }
 
     public setBricks(bricks: BrickModel[]): void {

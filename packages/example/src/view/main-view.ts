@@ -5,9 +5,9 @@ export class MainView {
     private readonly _bricks: BrickView[] = [];
 
     public constructor() {
-        this._buildBricks(mono.store.game.bricks);
+        this._buildBricks(window.mono.store.game.bricks);
 
-        mono.model.on('Brick:LivesUpdate', this._onBrickLivesUpdate, this);
+        window.mono.model.on('Brick:LivesUpdate', this._onBrickLivesUpdate, this);
     }
 
     private _buildBricks(bricks: BrickModel[]): void {

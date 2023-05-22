@@ -17,13 +17,7 @@ interface IGameSettingsSerialized {
     sound: boolean;
 }
 
-declare global {
-    // eslint-disable-next-line @typescript-eslint/naming-convention
-    interface Window {
-        mono: import('@gameastic/mono').Mono<import('./src/types').Mono.IEvents, import('./src/types').Mono.IStore>;
-    }
-
-    const mono: Window['mono'];
+// eslint-disable-next-line @typescript-eslint/naming-convention
+interface Window {
+    mono: import('@gameastic/mono').Mono<import('./src/types').Mono.IEvents, import('./src/types').Mono.IStore>;
 }
-
-export {};

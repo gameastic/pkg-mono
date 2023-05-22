@@ -7,13 +7,13 @@ export class UserModel {
 
     protected set name(value: string) {
         this._name = value;
-        mono.model.emit('User:NameUpdate', this._name);
+        window.mono.model.emit('User:NameUpdate', this._name);
     }
 
     public initialize(): void {
         this.setName('John');
 
-        mono.model.emit('User:Initialized', this);
+        window.mono.model.emit('User:Initialized', this);
     }
 
     public setName(name: string): void {

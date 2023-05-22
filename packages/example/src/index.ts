@@ -11,10 +11,10 @@ document.addEventListener(
     () => {
         window.mono = new Mono<MonoType.IEvents, MonoType.IStore>(new StoreModel());
 
-        mono.command.execute(mapGameEventsCommand);
-        mono.command.execute(enableMonoLoggerCommand);
-        mono.command.execute(initializeStoreCommand);
-        mono.command.execute(initializeViewCommand);
+        void window.mono.command.execute(mapGameEventsCommand);
+        void window.mono.command.execute(enableMonoLoggerCommand);
+        void window.mono.command.execute(initializeStoreCommand);
+        void window.mono.command.execute(initializeViewCommand);
     },
     false
 );

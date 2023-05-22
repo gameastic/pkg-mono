@@ -12,7 +12,7 @@ export class BrickModel {
 
     protected set lives(value: number) {
         this._lives = value;
-        mono.model.emit('Brick:LivesUpdate', this.index, this.lives);
+        window.mono.model.emit('Brick:LivesUpdate', this.index, this.lives);
     }
 
     public initialize(index: number, lives: number): void {

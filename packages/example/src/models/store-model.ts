@@ -22,7 +22,7 @@ export class StoreModel {
     }
 
     public initialize(): void {
-        mono.model.emit('Store:Initialized', this);
+        window.mono.model.emit('Store:Initialized', this);
     }
 
     public setUser(user: UserModel): void {
