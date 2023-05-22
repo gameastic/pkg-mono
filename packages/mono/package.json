@@ -1,0 +1,33 @@
+{
+    "name": "@gameastic/mono",
+    "version": "1.0.0",
+    "license": "MIT",
+    "source": "src/index.ts",
+    "main": "dist/index.js",
+    "author": "https://github.com/gameastic",
+    "description": "Some description for this lib",
+    "private": false,
+    "files": [
+        "dist/**/*"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:gameastic/mono.git"
+    },
+    "bugs": {
+        "url": "https://github.com/gameastic/mono/issues"
+    },
+    "keywords": [
+        "mono",
+        "mvc"
+    ],
+    "homepage": "https://github.com/gameastic/mono#readme",
+    "scripts": {
+        "clean": "rimraf dist && rimraf tsconfig.tsbuildinfo",
+        "test": "jest --config jestconfig.json",
+        "lint": "eslint 'src/**/*.{js,ts,ts}'",
+        "build": "npm run clean && tsc --build"
+    },
+    "dependencies": {},
+    "devDependencies": {}
+}
