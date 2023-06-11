@@ -1,11 +1,11 @@
-import { BrickModel } from './models/brick-model';
-import { GameModel } from './models/game-model';
-import { type StoreModel } from './models/store-model';
-import { UserModel } from './models/user-model';
+import type { BrickModel } from './models/brick-model';
+import type { GameModel } from './models/game-model';
+import type { StoreModel } from './models/store-model';
+import type { UserModel } from './models/user-model';
 
 // eslint-disable-next-line @typescript-eslint/no-namespace
 export declare namespace Mono {
-    interface IStore extends StoreModel {}
+    type IStore = StoreModel;
 
     interface IEvents {
         /* VIEW */

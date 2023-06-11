@@ -16,9 +16,9 @@ export class MonoLogger {
     }
 
     private async _boundCommandExecute(fn: (...args: any[]) => void | Promise<void>): Promise<void> {
-        // @ts-expect-error
+        // @ts-expect-error accessing private property _payloads
         const payloads = [...this._mono.command._payloads];
-        // @ts-expect-error
+        // @ts-expect-error accessing private property _payloads
         const guards = [...this._mono.command._guards];
 
         for (const guard of guards) {

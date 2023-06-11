@@ -4,7 +4,7 @@ import { initializeStoreCommand } from './commands/initialize-store-command';
 import { initializeViewCommand } from './commands/initialize-view-command';
 import { mapGameEventsCommand } from './commands/map-game-events-command';
 import { StoreModel } from './models/store-model';
-import { Mono as MonoType } from './types';
+import type { Mono as MonoType } from './types';
 
 document.addEventListener(
     'DOMContentLoaded',

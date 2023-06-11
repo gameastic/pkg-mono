@@ -1,4 +1,4 @@
-import { Mono } from '../types';
+import type { Mono } from '../types';
 import { onBrickClickCommand } from './on-brick-click-command';
 import { onGameInitializedCommand } from './on-game-initialized-command';
 import { onStoreInitializedCommand } from './on-store-initialized-command';

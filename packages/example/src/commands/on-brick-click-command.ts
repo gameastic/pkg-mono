@@ -1,5 +1,5 @@
 import { isActiveBrickGuard } from '../guards/is-active-brick-gurad';
-import { Mono } from '../types';
+import type { Mono } from '../types';
 import { setBrickLivesCommand } from './set-brick-lives-command';
 
 export const onBrickClickCommand = (store: Mono.IStore, index: number): void => {

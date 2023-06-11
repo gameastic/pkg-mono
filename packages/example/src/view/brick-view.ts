@@ -1,4 +1,4 @@
-import { BrickModel } from '../models/brick-model';
+import type { BrickModel } from '../models/brick-model';
 
 export class BrickView {
     public readonly div: HTMLDivElement;

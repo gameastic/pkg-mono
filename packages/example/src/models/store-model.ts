@@ -1,5 +1,5 @@
 import { type GameModel } from './game-model';
-import { UserModel } from './user-model';
+import type { UserModel } from './user-model';
 
 export class StoreModel {
     private _user!: UserModel;

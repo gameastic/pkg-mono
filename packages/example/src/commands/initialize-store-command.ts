@@ -1,6 +1,6 @@
 import { GameModel } from '../models/game-model';
 import { UserModel } from '../models/user-model';
-import { Mono } from '../types';
+import type { Mono } from '../types';
 
 export const initializeStoreCommand = (store: Mono.IStore): void => {
     const user = new UserModel();
